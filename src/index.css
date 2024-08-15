@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .title {
+    @apply font-bold bg-gradient-to-b from-black to-blue-900 bg-clip-text text-transparent tracking-tighter leading-tight text-center text-5xl
+  }
+}
+
+@font-face {
+  font-family: "DMsans";
+  src: url("/fonts/DMSans.ttf") format("truetype")
+}
+
+#root {
+  color-scheme: light-dark;
+}
+
+p::selection {
+  background-color: coral;
+}
+
+body {
+  font-family: "DMsans";
+  background-color: light-dark(#fff, #171717);
+}
