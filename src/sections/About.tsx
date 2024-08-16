@@ -11,7 +11,7 @@ export default function About() {
           problemas de manera creativa. Disfruto mucho de lo que hago, y me
           apasiona trabajar en proyectos que combinan diseño y tecnología.
         </p>
-        <picture className="rounded-full overflow-hidden block h-72 w-72 md:h-96 md:w-96 transition mt-10 mx-auto bg-slate-100 border-2 border-slate-200/15">
+        <picture className="rounded-full overflow-hidden block h-72 w-72 md:h-96 md:w-96 transition mt-14 mx-auto bg-blue-50">
           <source srcSet="./src/assets/picture.webp" type="image/webp" />
           <source srcSet="./src/assets/picture.png" type="image/png" />
           <img
