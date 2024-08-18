@@ -70,7 +70,7 @@ const PROJECTS_DATA = [
 
 export default function Projects() {
   return (
-    <section className="pb-28 bg-[radial-gradient(200%_100%_at_bottom_right,#cedbef,white,white)]">
+    <section className="pb-28 bg-white">
       <div className="container">
         <h2 className="title">Proyectos</h2>
         <ul className="grid md:grid-cols-2 justify-items-center gap-5 mt-10">
