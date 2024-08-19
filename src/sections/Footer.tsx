@@ -2,22 +2,22 @@ const SOCIAL_MEDIA = [
   {
     name: "Linked In",
     icon: "linkedin",
-    url: "",
+    url: "https://www.linkedin.com/in/enocde-v/",
   },
   {
     name: "GitHub",
     icon: "github",
-    url: "",
+    url: "https://github.com/EnocDE",
   },
   {
     name: "Insagram",
     icon: "instagram",
-    url: "",
+    url: "https://www.instagram.com/edmz_/",
   },
   {
     name: "Email",
     icon: "email",
-    url: "",
+    url: "mailto:enocescazan@hotmail.com",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function Footer() {
           </p>
           <nav className="flex gap-5 flex-wrap items-center justify-center">
             {SOCIAL_MEDIA.map((social) => (
-              <a href={social.url} className="hover:-translate-y-1 transform-gpu transition-transform">
+              <a key={social.url} target="_blank" href={social.url} className="hover:-translate-y-1 transform-gpu transition-transform">
                 <img
                   src={`./src/assets/${social.icon}.svg`}
                   alt={`${social.name} Logo`}
