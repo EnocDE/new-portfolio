@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const PROJECTS_DATA = [
   {
     name: "Uptask",
@@ -72,17 +74,44 @@ export default function Projects() {
   return (
     <section className="pb-28 bg-white">
       <div className="container">
-        <h2 className="title">Proyectos</h2>
-        <ul className="grid md:grid-cols-2 justify-items-center gap-5 mt-10">
+        <motion.h2
+          className="title"
+          initial={{
+            opacity: 0,
+            translateX: 100,
+          }}
+          whileInView={{
+            opacity: 1,
+            translateX: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
+          Proyectos
+        </motion.h2>
+        <ul className="grid md:grid-cols-2 justify-items-center gap-5 mt-10 transform-gpu">
           {PROJECTS_DATA.map(
-            ({ name, image, page, repository, technologies }) => (
-              <li key={name}>
+            ({ name, image, page, repository, technologies }, index) => (
+              <motion.li
+                key={name}
+                initial={{
+                  opacity: 0,
+                  scale: 0.5,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                }}
+                viewport={{
+                  once: true,
+                }}
+                transition={{
+                  delay: index * 0.1,
+                }}
+              >
                 <div className="overflow-hidden rounded-xl">
-                  <img
-                    src={`./src/assets/projects/${image}.png`}
-                    alt=""
-                    className="hover:scale-[1.15] transition"
-                  />
+                  <img src={`./src/assets/projects/${image}.png`} alt="" />
                 </div>
                 <h3 className="font-bold text-2xl text-blue-950 tracking-tight">
                   {name}
@@ -113,7 +142,7 @@ export default function Projects() {
                     Repositorio
                   </a>
                 </div>
-              </li>
+              </motion.li>
             )
           )}
         </ul>
