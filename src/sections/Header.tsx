@@ -1,8 +1,16 @@
+import { motion, useScroll, useTransform } from "framer-motion";
+
 const SOCIAL_MEDIA_INFO = ["Proyectos", "CV"];
 
 export default function Header() {
+  const { scrollYProgress } = useScroll();
+  const width = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   return (
     <header className="py-5 sticky top-0 backdrop-blur z-20">
+      <motion.div
+        className="absolute top-0 bg-[#40c9ff] h-1"
+        style={{ width }}
+      ></motion.div>
       <div className="container">
         <div className="flex justify-between">
           <div className="flex items-baseline">
