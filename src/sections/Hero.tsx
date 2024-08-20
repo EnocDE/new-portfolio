@@ -1,7 +1,6 @@
-import { motion, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Hero() {
-  const x = useSpring(0);
   return (
     <section className="bg-[radial-gradient(ellipse_100%_100%_at_bottom_left,#ffffff,#cedbef_100%)] pt-8 pb-20 backdrop-blur overflow-x-clip">
       <div className="container">
@@ -64,16 +63,6 @@ export default function Hero() {
               animate={{
                 opacity: [0, 1],
                 scale: [1.5, 1]
-              }}
-              style={{
-                x,
-              }}
-              drag
-              dragConstraints={{
-                bottom: 0,
-                top: 0,
-                left: 0,
-                right: 0
               }}
             />
           </div>
