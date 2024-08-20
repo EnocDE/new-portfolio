@@ -1,10 +1,33 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import useMenuStore from "../stores/menu-store";
 
-const SOCIAL_MEDIA_INFO = ["Proyectos", "CV"];
+const SOCIAL_MEDIA = [
+  {
+    name: "Linked In",
+    icon: "linkedin",
+    url: "https://www.linkedin.com/in/enocde-v/",
+  },
+  {
+    name: "GitHub",
+    icon: "github",
+    url: "https://github.com/EnocDE",
+  },
+  {
+    name: "Instagram",
+    icon: "instagram",
+    url: "https://www.instagram.com/edmz_/",
+  },
+  {
+    name: "Email",
+    icon: "email",
+    url: "mailto:enocescazan@hotmail.com",
+  },
+];
 
 export default function Header() {
+  const handleOpenMenu = useMenuStore((state) => state.openMenu)
   const { scrollYProgress } = useScroll();
-  const width = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const width = useTransform(scrollYProgress, [0, .98], ["0%", "100%"]);
   return (
     <header className="py-5 sticky top-0 backdrop-blur z-20">
       <motion.div
@@ -15,24 +38,33 @@ export default function Header() {
         <div className="flex justify-between">
           <div className="flex items-baseline">
             <img
-              width="48"
-              height="48"
-              src="https://img.icons8.com/badges/48/e.png"
-              alt="e"
+              width="50"
+              height="50"
+              src="./src/assets/logo.svg"
+              alt="Logo"
             />
           </div>
           <div className="flex items-center">
             <nav className={`hidden md:flex gap-4`}>
-              {SOCIAL_MEDIA_INFO.map((name) => (
-                <a key={name} href="#" className="text-blue-950 font-medium">
-                  {name}
+              {SOCIAL_MEDIA.map((social) => (
+                <a
+                  key={social.url}
+                  target="_blank"
+                  href={social.url}
+                  className="hover:-translate-y-1 transform-gpu transition-transform"
+                >
+                  <img
+                    src={`./src/assets/${social.icon}.svg`}
+                    alt={`${social.name} Logo`}
+                    className="w-6"
+                  />
                 </a>
               ))}
             </nav>
-            <button className="flex md:hidden flex-col gap-1">
-              <div className="w-5 h-[3px] bg-neutral-700 rounded-full"></div>
-              <div className="w-5 h-[3px] bg-neutral-700 rounded-full"></div>
-              <div className="w-5 h-[3px] bg-neutral-700 rounded-full"></div>
+            <button onClick={handleOpenMenu} className="flex md:hidden flex-col gap-1">
+              <div className="w-5 h-[3px] bg-neutral-800 rounded-full"></div>
+              <div className="w-5 h-[3px] bg-neutral-800 rounded-full"></div>
+              <div className="w-5 h-[3px] bg-neutral-800 rounded-full"></div>
             </button>
           </div>
         </div>
