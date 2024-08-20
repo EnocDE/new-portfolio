@@ -58,8 +58,8 @@ export default function About() {
             once: true,
           }}
           transition={{
-            delay: .2,
-            ease: "linear"
+            delay: 0.2,
+            ease: "linear",
           }}
         >
           <source srcSet="./src/assets/picture.webp" type="image/webp" />
@@ -80,7 +80,7 @@ export default function About() {
               once: true,
             }}
             transition={{
-              delay: .8,
+              delay: 0.8,
             }}
           />
         </motion.picture>
