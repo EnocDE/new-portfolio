@@ -10,7 +10,7 @@ const SOCIAL_MEDIA = [
     url: "https://github.com/EnocDE",
   },
   {
-    name: "Insagram",
+    name: "Instagram",
     icon: "instagram",
     url: "https://www.instagram.com/edmz_/",
   },
@@ -31,7 +31,12 @@ export default function Footer() {
           </p>
           <nav className="flex gap-5 flex-wrap items-center justify-center">
             {SOCIAL_MEDIA.map((social) => (
-              <a key={social.url} target="_blank" href={social.url} className="hover:-translate-y-1 transform-gpu transition-transform">
+              <a
+                key={social.url}
+                target="_blank"
+                href={social.url}
+                className="hover:-translate-y-1 transform-gpu transition-transform"
+              >
                 <img
                   src={`./src/assets/${social.icon}.svg`}
                   alt={`${social.name} Logo`}
