@@ -109,13 +109,6 @@ export default function Technologies() {
                   alt={`${name} Image`}
                   width={150}
                   className="drop-shadow-lg select-none"
-                  drag
-                  dragConstraints={{
-                    top: 0,
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                  }}
                 />
               </motion.li>
             ))}
