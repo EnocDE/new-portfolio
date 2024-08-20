@@ -72,7 +72,7 @@ const PROJECTS_DATA = [
 
 export default function Projects() {
   return (
-    <section className="pb-28 bg-white">
+    <section className="pb-28 bg-white overflow-hidden">
       <div className="container">
         <motion.h2
           className="title"
