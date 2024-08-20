@@ -91,7 +91,7 @@ export default function Technologies() {
                 key={name}
                 initial={{
                   opacity: 0,
-                  translateX: 100,
+                  translateX: 50,
                 }}
                 whileInView={{
                   opacity: 1,
@@ -101,7 +101,7 @@ export default function Technologies() {
                   once: true,
                 }}
                 transition={{
-                  delay: index * .2,
+                  delay: index * .1,
                 }}
               >
                 <motion.img
