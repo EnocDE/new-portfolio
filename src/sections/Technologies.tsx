@@ -120,18 +120,6 @@ export default function Technologies() {
               </motion.li>
             ))}
           </ul>
-          <img
-            src="./src/assets/yellow-curve.png"
-            alt="Yellow Curve Image"
-            className="absolute -left-60 rotate-180"
-            width={250}
-          />
-          <img
-            src="./src/assets/red-capsule.png"
-            alt="Yellow Curve Image"
-            className="absolute -top-28 -right-60 rotate-180"
-            width={250}
-          />
         </div>
       </div>
     </section>
