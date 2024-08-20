@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import useMenuStore from "../stores/menu-store";
+import { useEffect } from "react";
 
 const SOCIAL_MEDIA = [
   {
@@ -26,8 +27,21 @@ const SOCIAL_MEDIA = [
 ];
 
 export default function Menu() {
+  const closeMenu = useMenuStore((state) => state.closeMenu);
   const showMenu = useMenuStore(state => state.showMenu)
   const handleCloseMenu = useMenuStore(state => state.closeMenu)
+
+  useEffect(() => {
+    const handleResize = () => {
+      console.log(window.innerWidth);
+      if (window.innerWidth > 768 && showMenu) {
+        closeMenu();
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className={twMerge("fixed inset-0 bg-white z-20 transition ease-linear", !showMenu ? "translate-x-full" : "translate-x-0")}>
         <nav className="flex flex-col w-full h-full justify-center items-center gap-16">
