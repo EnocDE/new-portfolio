@@ -38,7 +38,7 @@ export default function Menu() {
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [showMenu, handleCloseMenu]);
 
   return (
     <div className={twMerge("fixed inset-0 bg-white z-20 transition ease-linear", !showMenu ? "translate-x-full" : "translate-x-0")}>
