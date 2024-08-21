@@ -27,15 +27,13 @@ const SOCIAL_MEDIA = [
 ];
 
 export default function Menu() {
-  const closeMenu = useMenuStore((state) => state.closeMenu);
   const showMenu = useMenuStore(state => state.showMenu)
   const handleCloseMenu = useMenuStore(state => state.closeMenu)
 
   useEffect(() => {
     const handleResize = () => {
-      console.log(window.innerWidth);
       if (window.innerWidth > 768 && showMenu) {
-        closeMenu();
+        handleCloseMenu();
       }
     };
     window.addEventListener("resize", handleResize);
