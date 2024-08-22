@@ -21,7 +21,7 @@ export default function About() {
           ¿Quién soy yo?
         </motion.h2>
         <motion.p
-          className="mt-10 text-blue-900 mx-auto text-center font-medium"
+          className="mt-10 text-blue-900 mx-auto text-center font-medium text-pretty "
           initial={{
             opacity: 0,
             translateX: 100,
@@ -37,10 +37,10 @@ export default function About() {
             once: true,
           }}
         >
-          Soy un entusiasta del desarrollo frontend, siempre buscando
+          Soy un ingeniero en sistemas enfocado en el desarrollo frontend, siempre buscando
           aprendizaje para mejorar la experiencia de usuario mediante la
           creación de interfaces elegantes y eficientes. Me considero una
-          persona curiosa, con un enfoque en aprender, y aplicarlo para resolver
+          persona curiosa, con un enfoque en aprender y aplicarlo para resolver
           problemas de manera creativa. Disfruto mucho de lo que hago, y me
           apasiona trabajar en proyectos que combinan diseño y tecnología.
         </motion.p>
