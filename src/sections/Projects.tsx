@@ -19,7 +19,7 @@ const PROJECTS_DATA = [
   },
   {
     name: "Quiosco",
-    technologies: ["Next.js", "React.js", "Prisma", "TailwindCSS"],
+    technologies: ["Next.js", "React.js", "Prisma", "TailwindCSS", "Zustand"],
     image: "quiosco",
     description:
       'Este sistema es un <span class="highlight-text">quiosco de comida</span> que presenta un menú interactivo para que los clientes elijan y realicen sus pedidos. Incluye funcionalidades para administrar los productos mostrados en el menú, actualizar el estado de las órdenes desde la cocina, y una pantalla que muestra los últimos 5 pedidos listos para ser recogidos.',
@@ -130,14 +130,14 @@ export default function Projects() {
                   <a
                     href={page}
                     target="_blank"
-                    className="inline-block py-2 px-3 border rounded-xl shadow-[0_5px_5px_#e3e3e390]"
+                    className="inline-block py-2 px-3 border rounded-xl shadow-[0_5px_5px_#e3e3e390] transition-transform hover:scale-110"
                   >
                     Ver
                   </a>
                   <a
                     href={repository}
                     target="_blank"
-                    className="inline-block py-2 px-3 border rounded-xl shadow-[0_5px_5px_#e3e3e390]"
+                    className="inline-block py-2 px-3 border rounded-xl shadow-[0_5px_5px_#e3e3e390] transition-transform hover:scale-110"
                   >
                     Repositorio
                   </a>
