@@ -101,11 +101,11 @@ export default function Technologies() {
                   once: true,
                 }}
                 transition={{
-                  delay: index * .1,
+                  delay: index * 0.1,
                 }}
               >
                 <motion.img
-                  src={`./src/assets/${icon}.svg`}
+                  src={`/images/${icon}.svg`}
                   alt={`${name} Image`}
                   width={150}
                   className="drop-shadow-lg select-none"

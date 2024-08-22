@@ -37,12 +37,13 @@ export default function About() {
             once: true,
           }}
         >
-          Soy un ingeniero en sistemas enfocado en el desarrollo frontend, siempre buscando
-          aprendizaje para mejorar la experiencia de usuario mediante la
-          creación de interfaces elegantes y eficientes. Me considero una
-          persona curiosa, con un enfoque en aprender y aplicarlo para resolver
-          problemas de manera creativa. Disfruto mucho de lo que hago, y me
-          apasiona trabajar en proyectos que combinan diseño y tecnología.
+          Soy un ingeniero en sistemas enfocado en el desarrollo frontend,
+          siempre buscando aprendizaje para mejorar la experiencia de usuario
+          mediante la creación de interfaces elegantes y eficientes. Me
+          considero una persona curiosa, con un enfoque en aprender y aplicarlo
+          para resolver problemas de manera creativa. Disfruto mucho de lo que
+          hago, y me apasiona trabajar en proyectos que combinan diseño y
+          tecnología.
         </motion.p>
         <motion.picture
           className="rounded-full overflow-hidden block h-72 w-72 md:h-96 md:w-96 transition mt-14 mx-auto bg-blue-50"
@@ -62,10 +63,10 @@ export default function About() {
             ease: "linear",
           }}
         >
-          <source srcSet="./src/assets/picture.webp" type="image/webp" />
-          <source srcSet="./src/assets/picture.png" type="image/png" />
+          <source srcSet="/images/picture.webp" type="image/webp" />
+          <source srcSet="/images/picture.png" type="image/png" />
           <motion.img
-            src="./src/assets/picture.png"
+            src="/images/picture.png"
             alt="Me"
             className="-scale-x-100"
             initial={{

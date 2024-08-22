@@ -111,7 +111,11 @@ export default function Projects() {
                 }}
               >
                 <div className="overflow-hidden rounded-xl">
-                  <img src={`./src/assets/projects/${image}.png`} alt="" className="hover:scale-[1.15] transition" />
+                  <img
+                    src={`/images/projects/${image}.png`}
+                    alt=""
+                    className="hover:scale-[1.15] transition"
+                  />
                 </div>
                 <h3 className="font-bold text-2xl text-blue-950 tracking-tight">
                   {name}

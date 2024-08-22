@@ -38,7 +38,7 @@ export default function Footer() {
                 className="hover:-translate-y-1 transform-gpu transition-transform"
               >
                 <img
-                  src={`./src/assets/${social.icon}.svg`}
+                  src={`/images/${social.icon}.svg`}
                   alt={`${social.name} Logo`}
                   className="invert w-6"
                 />
