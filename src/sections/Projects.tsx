@@ -90,7 +90,7 @@ export default function Projects() {
         >
           Proyectos
         </motion.h2>
-        <ul className="grid md:grid-cols-2 justify-items-center gap-5 mt-10 transform-gpu">
+        <ul className="grid md:grid-cols-2 justify-items-center gap-x-5 gap-y-10 mt-10 transform-gpu">
           {PROJECTS_DATA.map(
             ({ name, image, page, repository, technologies }, index) => (
               <motion.li
@@ -116,7 +116,7 @@ export default function Projects() {
                 <h3 className="font-bold text-2xl text-blue-950 tracking-tight">
                   {name}
                 </h3>
-                <ul className="flex flex-wrap gap-x-2">
+                <ul className="flex flex-wrap gap-x-2 ">
                   {technologies.map((tech) => (
                     <li
                       key={`${name} ${tech}`}
@@ -132,7 +132,7 @@ export default function Projects() {
                     target="_blank"
                     className="inline-block py-2 px-3 border rounded-xl shadow-[0_5px_5px_#e3e3e390] transition-transform hover:scale-110"
                   >
-                    Ver
+                    Ver proyecto
                   </a>
                   <a
                     href={repository}
