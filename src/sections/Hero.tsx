@@ -50,7 +50,7 @@ export default function Hero() {
             >
               Hola, soy un desarrollador frontend especializado en crear
               aplicaciones web responsivas y visualmente atractivas.
-              <span className="inline-block font-semibold">
+              <span className="inline-block font-semibold tracking-tight mt-5">
                 ¡Explora mis proyectos!
               </span>
             </motion.p>
