@@ -16,8 +16,8 @@ export default function Header() {
         <div className="flex justify-between">
           <div className="flex items-baseline">
             <img
-              width="50"
-              height="50"
+              width="60"
+              height="60"
               src="./src/assets/logo.svg"
               alt="Logo"
             />
