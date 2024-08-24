@@ -64,6 +64,7 @@ export default function Hero() {
                 opacity: [0, 1],
                 scale: [1.5, 1],
               }}
+              loading="eager"
             />
           </div>
         </div>
