@@ -113,7 +113,7 @@ export default function Projects() {
                 <div className="overflow-hidden rounded-xl">
                   <img
                     src={`/images/projects/${image}.png`}
-                    alt=""
+                    alt={`${name} Project Image`}
                     className="hover:scale-[1.15] transition"
                   />
                 </div>

@@ -15,7 +15,7 @@ export default function Header() {
       <div className="container">
         <div className="flex justify-between">
           <div className="flex items-baseline">
-            <img width="60" height="60" src="/images/logo.svg" alt="Logo" />
+            <img width="60" height="60" src="/images/logo.svg" alt="React Logo" />
           </div>
           <div className="flex items-center">
             <nav className={`hidden md:flex gap-4`}>

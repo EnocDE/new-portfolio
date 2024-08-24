@@ -67,7 +67,7 @@ export default function About() {
           <source srcSet="/images/picture.png" type="image/png" />
           <motion.img
             src="/images/picture.png"
-            alt="Me"
+            alt="Profile picture of Enoc Domínguez Escazán"
             className="-scale-x-100"
             initial={{
               opacity: 0,

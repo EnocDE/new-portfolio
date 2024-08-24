@@ -58,7 +58,7 @@ export default function Hero() {
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
             <motion.img
               src="/images/purple-curve.png"
-              alt="Rize Image"
+              alt="Purple Curve Image"
               className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0 drop-shadow-xl"
               animate={{
                 opacity: [0, 1],
