@@ -111,11 +111,24 @@ export default function Projects() {
                 }}
               >
                 <div className="overflow-hidden rounded-xl">
-                  <img
-                    src={`/images/projects/${image}.png`}
-                    alt={`${name} Project Image`}
-                    className="hover:scale-[1.15] transition"
-                  />
+                  <picture>
+                    <source
+                      srcSet={`/images/projects/${image}.webp`}
+                      type="image/webp"
+                    />
+                    <source
+                      srcSet={`/images/projects/${image}.png`}
+                      type="image/png"
+                    />
+                    <img
+                      src={`/images/projects/${image}.png`}
+                      alt={`${name} Project Image`}
+                      className="hover:scale-[1.15] transition w-full h-auto"
+                      width={100}
+                      height={100}
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <h3 className="font-bold text-2xl text-blue-950 tracking-tight">
                   {name}
