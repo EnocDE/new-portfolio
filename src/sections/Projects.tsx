@@ -148,6 +148,7 @@ export default function Projects() {
                     href={page}
                     target="_blank"
                     className="inline-block py-2 px-3 border rounded-xl shadow-[0_5px_5px_#e3e3e390] transition-transform hover:scale-110"
+                    referrerPolicy="no-referrer"
                   >
                     Ver proyecto
                   </a>
@@ -155,6 +156,7 @@ export default function Projects() {
                     href={repository}
                     target="_blank"
                     className="inline-block py-2 px-3 border rounded-xl shadow-[0_5px_5px_#e3e3e390] transition-transform hover:scale-110"
+                    referrerPolicy="no-referrer"
                   >
                     Repositorio
                   </a>

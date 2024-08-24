@@ -15,6 +15,7 @@ export default function Footer() {
                 target="_blank"
                 href={social.url}
                 className="hover:-translate-y-1 transform-gpu transition-transform"
+                referrerPolicy="no-referrer"
               >
                 <img
                   src={`/images/${social.icon}.svg`}

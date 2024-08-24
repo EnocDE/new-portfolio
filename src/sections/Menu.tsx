@@ -32,6 +32,7 @@ export default function Menu() {
             target="_blank"
             href={social.url}
             className="w-20 flex items-center flex-col gap-2 font-medium group"
+            referrerPolicy="no-referrer"
             initial={{
               opacity: 0,
             }}
