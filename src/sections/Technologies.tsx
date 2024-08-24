@@ -108,6 +108,7 @@ export default function Technologies() {
                   src={`/images/${icon}.svg`}
                   alt={`${name} Image`}
                   width={150}
+                  height={150}
                   className="drop-shadow-lg select-none"
                 />
               </motion.li>
