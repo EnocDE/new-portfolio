@@ -30,6 +30,8 @@ export default function Header() {
                     src={`/images/${social.icon}.svg`}
                     alt={`${social.name} Logo`}
                     className="w-6"
+                    width={24}
+                    height={24}
                   />
                 </a>
               ))}
