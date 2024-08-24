@@ -47,6 +47,9 @@ export default function Menu() {
               src={`/images/${social.icon}.svg`}
               alt={`${social.name} Logo`}
               className="object-cover bg-white"
+              width={80}
+              height={80}
+              loading="lazy"
             />
             <p className="text-center transition opacity-0 group-hover:opacity-100">
               {social.name}
