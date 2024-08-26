@@ -37,18 +37,24 @@ const PROJECTS_DATA = [
     ],
     image: "saas",
     description:
-      'Landing page desarrollada para <span class="highlight-text">promocionar un SaaS</span>.',
+      'Landing page desarrollada para promocionar un <span class="highlight-text">SaaS</span>.',
     page: "https://landing-page-saas-parallax.vercel.app/",
     repository: "https://github.com/EnocDE/landing-page-parallax",
   },
   {
-    name: "Calories Tracker",
-    technologies: ["TypeScript", "React.js", "Tailwind CSS"],
-    image: "tracker",
+    name: "AI Startup Landing Page",
+    technologies: [
+      "TypeScript",
+      "React.js",
+      "Next.JS",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
+    image: "aistartup",
     description:
-      'Esta aplicación proporciona la funcionalidad necesaria para llevar un detallado <span class="highlight-text">registro de las calorías</span> consumidas y las calorías gastadas a lo largo del día, permitiendo a los usuarios mantener un seguimiento preciso de su ingesta calórica y del gasto energético diario.',
-    page: "https://enocde-calorie-tracker.netlify.app/",
-    repository: "https://github.com/EnocDE/Calorie-Tracker",
+      'Landing page para promocionar una <span class="highlight-text">aplicación web</span> con IA.',
+    page: "https://ia-startup-landing-page.vercel.app/",
+    repository: "https://github.com/EnocDE/IA-startup-landing-page",
   },
   {
     name: "Real State",
