@@ -42,19 +42,22 @@ const PROJECTS_DATA = [
     repository: "https://github.com/EnocDE/landing-page-parallax",
   },
   {
-    name: "AI Startup Landing Page",
+    name: "Vizage Landing Page",
     technologies: [
       "TypeScript",
       "React.js",
-      "Next.JS",
+      "Remix Run",
       "Tailwind CSS",
       "Framer Motion",
+      "Prisma",
+      "PostgreSQL",
+      "JWT",
     ],
-    image: "aistartup",
+    image: "vizage",
     description:
-      'Landing page para promocionar una <span class="highlight-text">aplicación web</span> con IA.',
-    page: "https://ia-startup-landing-page.vercel.app/",
-    repository: "https://github.com/EnocDE/IA-startup-landing-page",
+      'Landing page para un <span class="highlight-text">negocio de barbería y estética.</span>',
+    page: "https://vizage.vercel.app/",
+    repository: "https://github.com/EnocDE/vizage-landing",
   },
   {
     name: "Real State",
@@ -78,7 +81,7 @@ const PROJECTS_DATA = [
 
 export default function Projects() {
   return (
-    <section className="pb-28 bg-white overflow-hidden">
+    <section className="overflow-hidden bg-white pb-28">
       <div className="container">
         <motion.h2
           className="title"
@@ -96,7 +99,7 @@ export default function Projects() {
         >
           Proyectos
         </motion.h2>
-        <ul className="grid md:grid-cols-2 justify-items-center gap-x-5 gap-y-10 mt-10 transform-gpu">
+        <ul className="grid mt-10 md:grid-cols-2 justify-items-center gap-x-5 gap-y-10 transform-gpu">
           {PROJECTS_DATA.map(
             ({ name, image, page, repository, technologies }, index) => (
               <motion.li
@@ -136,7 +139,7 @@ export default function Projects() {
                     />
                   </picture>
                 </div>
-                <h3 className="font-bold text-2xl text-blue-950 tracking-tight">
+                <h3 className="text-2xl font-bold tracking-tight text-blue-950">
                   {name}
                 </h3>
                 <ul className="flex flex-wrap gap-x-2 ">
